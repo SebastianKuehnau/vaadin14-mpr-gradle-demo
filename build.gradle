@@ -2,7 +2,7 @@ plugins {
     id 'war'
     id 'org.gretty' version '3.0.3'
     id 'com.devsoap.plugin.vaadin' version '2.0.0.beta2'
-    id 'com.vaadin' version '0.14.3.7'
+    id 'com.vaadin' version '0.17.0.1'
 }
 
 defaultTasks("clean", "build")
@@ -18,7 +18,7 @@ gretty {
 }
 
 vaadin {
-    version = "8.12.3"
+    version = "8.12.4"
 }
 
 // example of how to configure the Gradle Vaadin Plugin
@@ -27,7 +27,7 @@ vaadin14 {
 }
 
 dependencies {
-    implementation enforcedPlatform('com.vaadin:vaadin-bom:14.4.8')
+    implementation enforcedPlatform('com.vaadin:vaadin-bom:19.0.0')
 
     // Vaadin 14
     implementation("com.vaadin:vaadin-core") {
@@ -42,7 +42,7 @@ dependencies {
 
     vaadinCompile 'com.vaadin:mpr-v8:2.0.6'
 
-    compile 'com.vaadin:vaadin-spreadsheet:3.0.0.alpha2'
+    compile 'com.vaadin:vaadin-spreadsheet:2.1.1'
 
     compile 'com.vaadin:vaadin-server:8.12.3'
     compile 'com.vaadin:vaadin-client:8.12.3'
